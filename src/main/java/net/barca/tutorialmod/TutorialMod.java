@@ -1,6 +1,7 @@
 package net.barca.tutorialmod;
 
 import net.barca.tutorialmod.block.ModBlocks;
+import net.barca.tutorialmod.item.ModItemGroups;
 import net.barca.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
